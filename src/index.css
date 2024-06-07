@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --highlight1-color: #e8e8e8;
+  --highlight2-color: #f6e0a9;
+  --shadow-color1: #a3a3a3;
+  --shadow-color2: #bc9d4f;
+}
+
+@layer base {
+  @font-face {
+    font-family: "pixel";
+    src: url("./assets/font/goblin.otf");
+  }
+}
+
+@layer components {
+  .shadowPixel {
+    box-shadow: -3px 0px 0px 0px var(--highlight1-color),
+      3px 0 0 0 var(--shadow-color1), 0 -3px 0 0 var(--highlight1-color),
+      0 3px 0 0 var(--shadow-color1);
+  }
+  .shadowPixel2 {
+    box-shadow: -3px 0px 0px 0px var(--highlight2-color),
+      3px 0 0 0 var(--shadow-color2), 0 -3px 0 0 var(--highlight2-color),
+      0 3px 0 0 var(--shadow-color2);
+  }
+  .shadowPixelCarousel {
+    box-shadow: -4px 0px 0px 0px var(--highlight1-color),
+      4px 0 0 0 var(--shadow-color1), 0 -4px 0 0 var(--highlight1-color),
+      0 4px 0 0 var(--shadow-color1);
+  }
+  .shadowForDrawer {
+    box-shadow: -3px 0px 0px 0px #727273,
+      3px 0 0 0 #1A1A1D, 0 -3px 0 0 #727273,
+      0 3px 0 0 #1A1A1D;
+      @apply mb-8
+  }
+  .imgCarousel {
+    @apply w-[240px] grayscale hover:grayscale-0 transition duration-500 ease-in ;
+  }
+  .get-in-touch-link {
+    @apply w-16 md:w-20 opacity-80 hover:opacity-100 transition ease-in duration-300;
+  }
+}
+
+.work:hover {
+  cursor: url(./assets/cursor_select.cur), auto;
+}
+a:hover {
+  cursor: url(./assets/cursor_select.cur), auto;
+}
+
+body {
+  cursor: url(./assets/cursor_default.cur), auto;
+  @apply bg-dark text-primary font-spaceMono;
+}
+
+.bg-footer {
+  background-image: url("assets/footer.png");
+  background-size: contain;
+}
+
+.transitionAnim {
+  @apply scale-100;
+}
