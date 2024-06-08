@@ -100,7 +100,7 @@ const Drawer = ({ id, title, img, github, linkOpen }) => {
           htmlFor={id}
           aria-label="close sidebar"
           className="drawer-overlay"></label>
-        <div className="menu p-8 w-[30rem] min-h-full bg-primary text-dark ">
+        <div className="menu p-8 w-[15rem] lg:w-[30rem] min-h-full bg-primary text-dark ">
           {/* Sidebar content here */}
           <h1 className="tex-3xl font-pixel mb-8">{title}</h1>
           {img?.map((img) => (
