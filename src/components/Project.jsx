@@ -41,13 +41,38 @@ export default function Project() {
         {/* triger drawer */}
         <label
           htmlFor="drawer-1"
-          className="work bg-primary py-8 shadowPixel grow inline-block font-pixel">
-          MJS
+          className="work bg-primary py-8 shadowPixel grow inline-block font-pixel"
+        >
+          <svg
+            className="mx-auto rotate-180"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 20H13V8H15V6H13V4H11V6H9V8H11V20ZM7 10V8H9V10H7ZM7 10V12H5V10H7ZM17 10V8H15V10H17ZM17 10V12H19V10H17Z"
+              fill="#1E1E1E"
+            />
+          </svg>
         </label>
         <label
           htmlFor="drawer-2"
-          className="work bg-accent py-8 shadowPixel2 grow inline-block font-pixel">
-          Tasty Food
+          className="work bg-accent py-8 shadowPixel2 grow inline-block font-pixel"
+        >
+          <svg
+            className="mx-auto"
+            width="40"
+            height="40"
+            viewBox="0 0 150 150"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M72.1864 2.60352C73.1529 -0.00833505 76.8471 -0.00833766 77.8136 2.60352L96.1285 52.099C96.4324 52.9202 97.0798 53.5676 97.901 53.8715L147.396 72.1864C150.008 73.1529 150.008 76.8471 147.396 77.8136L97.901 96.1285C97.0798 96.4324 96.4324 97.0798 96.1285 97.901L77.8136 147.396C76.8471 150.008 73.1529 150.008 72.1864 147.396L53.8715 97.901C53.5676 97.0798 52.9202 96.4324 52.099 96.1285L2.60352 77.8136C-0.00833505 76.8471 -0.00833766 73.1529 2.60352 72.1864L52.099 53.8715C52.9202 53.5676 53.5676 52.9202 53.8715 52.099L72.1864 2.60352Z"
+              fill="#1E1E1E"
+            />
+          </svg>
         </label>
       </div>
     </div>
@@ -79,7 +104,8 @@ const Drawer = ({ id, title, img, github, linkOpen }) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            className="w-8">
+            className="w-8"
+          >
             {" "}
             <path
               d="M3 21V3h18v18H3zM19 5H5v14h14V5zM7 13v-2h6V9h2v2h2v2h-2v2h-2v-2H7zm4 2h2v2h-2v-2zm0-8v2h2V7h-2z"
@@ -99,7 +125,8 @@ const Drawer = ({ id, title, img, github, linkOpen }) => {
         <label
           htmlFor={id}
           aria-label="close sidebar"
-          className="drawer-overlay"></label>
+          className="drawer-overlay"
+        ></label>
         <div className="menu p-8 w-[15rem] lg:w-[30rem] min-h-full bg-primary text-dark ">
           {/* Sidebar content here */}
           <h1 className="tex-3xl font-pixel mb-8">{title}</h1>
@@ -116,7 +143,8 @@ const Drawer = ({ id, title, img, github, linkOpen }) => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                className="w-8">
+                className="w-8"
+              >
                 {" "}
                 <path
                   fill="currentColor"
